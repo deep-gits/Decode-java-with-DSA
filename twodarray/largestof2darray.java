@@ -11,18 +11,7 @@ public class largestof2darray {
                 a[i][j]= sc.nextInt();
             }
         }
-         int mx = Integer.MIN_VALUE;
-        int m = a.length;
-        int n = a[0].length;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                mx=Math.max(mx,a[i][j]);
-                
-            }
-
-        }
-        System.out.println(mx);
-
+        int m =
 
     }
 }
