@@ -27,5 +27,22 @@ public class trasformintotraspose {
             
         }
         print(arr);
+        //Rotate -> reverse each row
+        for (int i = 0; i < m; i++) {
+            int a=0,b=m-1;
+            //swap arr[i][a] and arr[i][b]
+            while(a<b){
+                int temp= arr[i][a];
+                arr[i][a]=arr[i][b];
+                arr[i][b]= temp;
+                a++;
+                b--;
+
+            }
+        }
+        print(arr);
+        
+
+        
     }
 }
