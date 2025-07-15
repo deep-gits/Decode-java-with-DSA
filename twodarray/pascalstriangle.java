@@ -1,4 +1,4 @@
-// Java program for Pascal's Triangle using Binomial
+package twodarray;// Java program for Pascal's Triangle using Binomial
 // Coefficient in O(n^3) and O(1) Space 
 
 import java.util.*;
