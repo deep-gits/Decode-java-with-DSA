@@ -33,7 +33,8 @@ public class matrixmultiplication {
                 }
 
                 
-            }        print(a);
+            }
+            print(a);
             print(b);
             print(c);
         }
