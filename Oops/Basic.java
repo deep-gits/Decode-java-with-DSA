@@ -3,8 +3,10 @@ package Oops;
 public class Basic {
     public static void main(String[] args) {
         Pen d=new Pen();
+        d.setColor("blue");
+        System.out.println(d.getColor());
         d.setTip(5);
-        System.out.println(d.tip);
+        System.out.println(d.getTip());
         student c=new student();
         c.rollno=4;
         System.out.println(c.rollno);
@@ -27,14 +29,22 @@ class BankAccount{
 }
 
 class Pen{
-    String color;
-    int tip;
+    private String color;
+    private int tip;
+
+    String getColor(){
+        return this.color;
+    }
 
     void setColor(String newColor){
         color=newColor;
 
     }
+    int getTip(){
+        return this.tip;
+    }
     void setTip(int newTip){
+
         tip=newTip;
     }
 }
