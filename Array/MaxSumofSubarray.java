@@ -46,9 +46,23 @@ public class MaxSumofSubarray {
         }
         System.out.println("maxsum="+maxsum);
     }
+
+    public static void kandane(int arr[]){
+        int ms =Integer.MIN_VALUE;
+        int cs=0;
+        for (int i = 0; i < arr.length; i++) {
+            cs+=arr[i];
+            if (cs<0){
+                cs=0;
+            }
+            ms=Math.max(cs,ms);
+        }
+        System.out.println("our max sum="+ms);
+    }
     public static void main(String[] args) {
         int arr[]={2,4,6,8,10};
         SubArray(arr);
+        kandane(arr);
 
     }
 }
