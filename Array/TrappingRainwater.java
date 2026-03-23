@@ -18,7 +18,7 @@ public class TrappingRainwater {
         }
 
         // calculate right max boundary - array
-        int rightmax[] = new int[n];
+        int[] rightmax = new int[n];
         rightmax[n-1] = height[n-1];
         // FIX: Compare with rightmax[i+1]
         for (int i = n-2; i >= 0; i--) {
