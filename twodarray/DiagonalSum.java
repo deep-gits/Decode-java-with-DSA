@@ -1,7 +1,7 @@
 package twodarray;
 
 public class DiagonalSum {
-    public static int diagonalmatrixsum(int matrix[][]){
+    public static int diagonalmatrixsum(int[][] matrix){
         int sum=0;
         for (int i = 0; i < matrix.length; i++) {
             sum+=matrix[i][i];
