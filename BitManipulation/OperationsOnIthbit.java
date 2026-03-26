@@ -13,10 +13,16 @@ public class OperationsOnIthbit {
         return n|bitmask;
     }
 
+    public static int clearIthbit(int n,int i){
+        int bitmask=~(1<<i);
+        return n & bitmask;
+    }
+
 
     public static void main(String[] args) {
         System.out.println(getIthBit(10,2));
         System.out.println(setIthBit(10,2));
+        System.out.println(clearIthbit(10,2));
 
     }
 }
