@@ -31,12 +31,18 @@ public class OperationsOnIthbit {
 //        }
     }
 
+    public static  int clearLastIthbit(int n,int i){
+        int bitmask=(~0)<<i;
+        return n&bitmask;
+    }
+
 
     public static void main(String[] args) {
         System.out.println(getIthBit(10,2));
         System.out.println(setIthBit(10,2));
         System.out.println(clearIthbit(10,2));
         System.out.println(updateIthBit(10,2,1));
+        System.out.println(clearLastIthbit(15,2));
 
     }
 }
