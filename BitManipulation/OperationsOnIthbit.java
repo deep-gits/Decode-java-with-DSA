@@ -36,6 +36,13 @@ public class OperationsOnIthbit {
         return n&bitmask;
     }
 
+    public static int ClearIthToJthBit(int n,int i,int j){
+        int a=((~0)<<(j+1));
+        int b=(1<<i)-1;
+        int bitmask=a|b;
+        return n&bitmask;
+    }
+
 
     public static void main(String[] args) {
         System.out.println(getIthBit(10,2));
@@ -43,6 +50,6 @@ public class OperationsOnIthbit {
         System.out.println(clearIthbit(10,2));
         System.out.println(updateIthBit(10,2,1));
         System.out.println(clearLastIthbit(15,2));
-
+        System.out.println(ClearIthToJthBit(10,2,4));
     }
 }
